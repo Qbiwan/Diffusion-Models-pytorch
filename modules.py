@@ -73,7 +73,7 @@ class DoubleConv(nn.Module):
         if self.residual:
             return F.gelu(x + self.double_conv(x))
         else:
-            return self.double_conv(x)
+            return F.gelu(self.double_conv(x))
 
 
 class Down(nn.Module):
