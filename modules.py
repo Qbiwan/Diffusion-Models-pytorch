@@ -73,7 +73,7 @@ class DoubleConv(nn.Module):
         if self.residual:
             return F.gelu(x + self.double_conv(x))
         else:
-            return F.gelu(self.double_conv(x))
+            return self.double_conv(x) # why no nn.gelu() ? cos emb_layer has nn.SiLU()
 
 
 class Down(nn.Module):
