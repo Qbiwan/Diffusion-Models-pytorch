@@ -49,4 +49,9 @@ This model was trained on [CIFAR-10 64x64](https://www.kaggle.com/datasets/joaop
     y = torch.Tensor([6] * n).long().to(device)
     x = diffusion.sample(model, n, y, cfg_scale=3)
     plot_images(x)
-```
+
+
+Test Test Test```
+
+# comments
+Responding to maintainer's comment
